@@ -2,7 +2,7 @@
 // simulacao de tela de logoff
 
 function logoff() {
-    console.log("usuario desconectado com sucesso.");
+    console.log("logoff realizado com sucesso.");
 }
 
 // exemplo de teste
