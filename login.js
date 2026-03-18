@@ -2,7 +2,7 @@
 // simulacao de tela de login
 
 function login(usuario, senha) {
-    if (usuario === "admin" && senha === "1234") {
+    if (usuario === "admin" && senha === "123456") {
         console.log("login realizado com sucesso!");
         return true;
     } else {
