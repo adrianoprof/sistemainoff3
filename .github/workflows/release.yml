@@ -1,0 +1,26 @@
+name: Release Workflow
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    name: Detectar nova versão
+    runs-on: ubunt-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Mostrar a referência completa
+        run: echo "Tag detectada:'$GITHUB_REF'"
+
+      - name: Mostrar nome simplificado da tags
+        run: echo "Versão publicada:${GITHUB_REF_NAME}"
+
+      - name: Exemplo - gerar log da versão
+        run: |
+          echo "Nova versão lançada: ${GITHUB_REF_NAME}" > release_log.txt
+          cat release_log.txt     
