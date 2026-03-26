@@ -2,6 +2,7 @@
 // simulacao de tela de login
 
 function login(usuario, senha) {
+    console.log("Entrou no login...")
     if (usuario === "admin" && senha === "123456") {
         console.log("login realizado com sucesso!");
         return true;
